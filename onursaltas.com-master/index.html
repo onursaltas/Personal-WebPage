@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="dest/css/index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-------------------------------------anime------------------------------------------------------------->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <!-------------------------------------anime------------------------------------------------------------->
+
+    <title >ONUR SALTAS || QA ENGINEER</title>
+</head>
+<body>
+  <nav id="navbar_top"  style="z-index: 2;" class="navbar fixed-top navbar-expand-lg navbar-dark ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><p>Onur Saltaş</p><p>QA Engineer</p></a>
+      <a class="navbar-toggler" id="a" type="button" onclick="bg()" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </a>
+      <div class="collapse navbar-collapse justify-content-center justify-content-end " id="navbarText">
+          <ul class="navbar-nav nav">
+              <li class="nav-item " onclick="jump()">
+                <a class="nav-link ">Home</a>
+              </li>
+              <li class="nav-item" onclick="jump1()">
+                <a class="nav-link"  >About</a>
+              </li>
+              <li class="nav-item" onclick="jump2()">
+                <a class="nav-link">Skills</a>
+              </li>
+              <li class="nav-item" onclick="jump3()">
+                <a class="nav-link">Works</a>
+              </li>
+          </ul>
+      </div>
+      <div class="social d-none d-lg-flex">
+          <li  class="nav-item"><a  href="https://www.instagram.com/onursaltass/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+          <li  class="nav-item" ><a  href="https://www.linkedin.com/in/onur-salta%C5%9F-775043187" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li class="nav-item" ><a  href="https://github.com/onursaltas" target="_blank"><i class="fab fa-github"></i></a></li>
+      </div>
+    </div>
+  </nav>
+   <div class="main">
+      <div id="home" class="home section "> 
+        <canvas class="webgl"></canvas>
+        <div class="text">
+          <h1 class="ml2"> Hi,I'm Onur Saltas </h1>
+          <p>QA Engineer || Software Test Automation Engineer </p>
+          <a class="btn" href="mailto:onursaltas1@gmail.com">Contact Me</a>
+      </div>
+      
+      </div>
+      <div id="about" class="about section ">
+      <div  class="container " >
+          <div>
+              <div class="col-lg">
+                  <div class="info"  >
+                  <h1>Who am I?</h1>
+                  <p>
+                    I'm Onur Saltas. I have More than 1 years of experience in IT industry as Software QA Engineer/Test Automation Engineer proficient in various testing tools and methodologies.
+                      SDLC,STLC,Defect Life Cycle within Waterfall and Agile Scrum Methodologies and very well exposed to all Scrum ceremonies.
+                  </p><p>
+                      I used Selenium Web Driver and Selenium Grid for UI tests. I used Tetng and Junit for Java as TDD. I wrote UI tests with Nunit on .Net.
+                      I used Java and Cucumber as BDD and Specflow with C#.
+                      I also used Postman for manual API testing. I made a project using Testng and Rest Assured library for API automation.
+                      As BDD for mobile automation, I wrote it in .Net with appium using specflow. As TDD, I used the Testng library together with Appium.
+                  </p><p>
+                      Experienced in creating and maintaining Automation Framework models (Behavioral Driven Development BDD,TDD, Hybrid and Data Driven Frameworks).
+                      Solid understanding and experience with different databases - Oracle Database and MySQL.
+                       </p><p>
+                      Performed Functional and Automation Testing, UI, UAT, Smoke Testing, Positive and Negative Testing, Regression Testing as well as Cross Browser Testing of web-based and client/server applications.
+                      Utilized Jira and Tfs  for both project management and Jira for defect management.
+                      Comfortable with Git/GitHub version control system and with Jenkins for Continuous Integration (CI).
+                  </p>
+
+                  </div>
+                </div>
+
+          </div>
+      </div>
+      </div> 
+      <div id="skills" class="skills section ">
+      <div class="container  align-items-center justify-content-center">
+        <div class="row ">
+            <div class="col-lg text-center">
+             <div id="skill" onmouseover="move()" onmouseout="back()" class="skill ">
+               <h1 id="head" class="head">UI Automation</h1>
+               <p  id="bilgi" class="bilgi">Selenium WebDriver - Selenium Grid - TDD ( JAVA : TestNG , JUnit - C# :  NUnit ) - BDD( Java : Cucumber - C# : Specflow  )</p>
+             </div>
+            </div>
+            <div class="col-lg text-center">
+                <div id="skil2" onmouseover="move2()" onmouseout="back2()" class="skill ">
+                    <h1 id="head2" class="head">API Automation</h1>
+                    <p  id="bilgi2" class="bilgi">REST Assured - TDD ( JAVA : TestNG , JUnit ) - BDD( Java : Cucumber ) <br> </p>
+
+                </div>
+            </div>
+            <div class="col-lg text-center ">
+              <div id="skill1"  onmouseover="move3()" onmouseout="back1()" class="skill">
+                <h1 id="head1" class="head">Mobil Automation</h1>
+                <p class="bilgi"><br>Appium - TDD ( JAVA : TestNG , JUnit ) - BDD( C# : Specflow ) </p>
+              </div>
+             </div>
+            <div class="col-lg text-center ">
+                <div id="skill4"  onmouseover="move1()" onmouseout="back3()" class="skill">
+                    <h1 id="head4" class="head">Load Test</h1>
+                    <p class="bilgi"><br>JMeter -WebLOAD - LoadNinja</p>
+                </div>
+            </div>
+
+        </div>
+           
+      </div>
+
+      </div>
+      <div id="works" class="works section ">
+          <div class="container">
+            <div id="owl-example" class="owl-carousel">
+              <a href="https://github.com/onursaltas/AkAkce-UI-AUTOMATION" target="_blank"> <div class="item"><img src="dest/images/uı.jpeg" alt=""> </div></a>
+              <a href="https://github.com/onursaltas/ReqresDummyRick-API-AUTOMATION" target="_blank"> <div class="item"><img src="dest/images/api.jpeg" alt=""> </div></a>
+              <a href="https://github.com/onursaltas/MOBIL-AUTOMATION" target="_blank"> <div class="item"><img src="dest/images/mobile.jpeg" alt=""> </div></a>
+              <a href="https://github.com/onursaltas/JMeter-Project" target="_blank"> <div class="item"><img src="dest/images/load.webp" alt=""> </div></a>
+            </div>
+          </div>
+      </div> 
+    </div>
+    <footer  class="text-center text-white">
+           
+      <div id="footer" class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2021 <span>/</span>
+        <a  href="https://github.com/onursaltas" target="_blank">Onur</a>
+      </div>
+    </footer>
+</body>
+<!-------------------------------------index.js------------------------------------------------------------->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.0.3/tilt.jquery.js" integrity="sha512-S2JCciTJc71f1kRG8qFmU1jryXH/mhfYlLvn7XJEwTcD9EJQTRr6gfMtnU6L/nnaodDgbazrmhdCRwbUuiRNQQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="src/js/default/scrollreveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="src/js/index.js"></script>
+<script src="src/js/costum.js"></script>
+
+<!-------------------------------------fontawesome------------------------------------------------------------->
+<script src="https://kit.fontawesome.com/3cdc159d7c.js" crossorigin="anonymous"></script>
+
+<!-------------------------------------jquery------------------------------------------------------------>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r127/three.js" integrity="sha512-TfxQd1Gi4H0u+TQ1ZsRYYp9MNqHvsnUGeCwganm/lWe7ekxmQKqrkCIIgBFs2rs/p+Chi4hNcIgAHT92eh6qBQ==" crossorigin="anonymous"></script>
+<script src="src/js/three.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+</html>
